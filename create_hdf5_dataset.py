@@ -9,14 +9,14 @@ from PIL import Image
 
 
 # list paths to all shards
-path_to_shards = "/Users/ima029/Desktop/SCAMPI/Repository/data/zip scrapings (huge)/run_2024-02-08"
+path_to_shards = "./run_2024-02-08 curated"
 folders = glob.glob(os.path.join(path_to_shards, "*"))
 folders = [folder for folder in folders if os.path.isdir(folder)]        
 folders.sort()
-folders = folders[28:]
+#folders = folders[28:]
 # destination path for hdf5 files
 #path_to_hdf5 = "/Users/ima029/Desktop/SCAMPI/Repository/data/zip scrapings (huge)/run_2024-02-08-hdf5"
-path_to_hdf5 = "/Users/ima029/Desktop/SCAMPI/Repository/data/zip scrapings (huge)/run_2024-02-08-hdf5-test"
+path_to_hdf5 = "./run_2024-02-08-hdf5-curated"
 os.makedirs(path_to_hdf5, exist_ok=True)
 
 #read_fn = lambda file: (file, torchvision.io.read_image(file))
@@ -61,7 +61,7 @@ def read_fn(bytes):
 
 # test the hdf5 files
 if __name__ == "__main__":
-    path_to_hdf5 = "/Users/ima029/Desktop/SCAMPI/Repository/data/zip scrapings (huge)/run_2024-02-08-hdf5-test/shard_0.hdf5"
+    path_to_hdf5 = "./run_2024-02-08-hdf5-curated/shard_0.hdf5"
     # read the hdf5 file
     with h5py.File(path_to_hdf5, 'r') as f:
         keys = list(f.keys())
