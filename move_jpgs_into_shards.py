@@ -1,3 +1,7 @@
+# ==============================================================================
+# This script distributes jpgs into multiple subfolders.
+# ==============================================================================
+
 import os
 import glob
 import shutil

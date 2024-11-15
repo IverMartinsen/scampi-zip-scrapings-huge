@@ -1,3 +1,7 @@
+# =============================================================================
+# Extract metadata from the file names and save it to a csv file.
+# =============================================================================
+
 import os
 import numpy as np
 import pandas as pd

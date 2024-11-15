@@ -1,3 +1,5 @@
+# Description: Display images from tfrecords file to check if the data is loaded correctly.
+
 import argparse
 import tensorflow as tf
 import matplotlib.pyplot as plt

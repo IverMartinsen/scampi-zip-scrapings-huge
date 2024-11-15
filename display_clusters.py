@@ -1,3 +1,8 @@
+# ==============================================================================
+# This script is used to save images of the clusters. 
+# The cluster sizes are saved to a csv file.
+# ==============================================================================
+
 import os
 import h5py
 import torch
