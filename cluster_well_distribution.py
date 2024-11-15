@@ -15,7 +15,7 @@ metadata = pd.read_csv("metadata.csv")
 for i in range(100):
     idx = np.where(labels == i)[0]
     files = filenames[idx]
-    wells = metadata.loc[metadata["file"].isin(files), "well_id"]
+    wells = metadata.loc[metadata["file"].isin(files), "well"]
     wells, counts = np.unique(wells, return_counts=True)
     pd.DataFrame({"well": wells, "count": counts}).to_csv(f"cluster_{i}_well_distribution.csv", index=False)
     
