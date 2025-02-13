@@ -18,6 +18,7 @@ cluster_stats = pd.read_csv("./clusters/cluster_stats.csv", sep=";")
 cluster_stats['clean'] = (cluster_stats['black'] != True) * (cluster_stats['blur'] != True) * (cluster_stats['artifact'] != True) * (cluster_stats['multi'] != True)
 clean_clusters = cluster_stats[cluster_stats['clean'] == True].index.values
 
+print(f"Number of clean images: {cluster_stats['size'][clean_clusters].sum()}")
 
 # open the file
 with h5py.File("cluster_labels.hdf5", 'r') as f:
