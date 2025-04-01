@@ -1,12 +1,15 @@
 *.DS_Store
 *.zip
 *.hdf5
-*.csv
 /tfds
 /run_2024-02-08
 /clusters
 /run_2024-02-08 curated
 /figures
+curated_well_distribution_hist.png
+metadata.csv
+local_well_stats.csv
+global_well_stats.csv
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
