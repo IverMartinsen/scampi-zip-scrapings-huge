@@ -1,3 +1,5 @@
+# This script generates a CSV file, a bar plot, and a histogram for each cluster, showing the distribution of wells associated with that cluster.
+
 import h5py
 import numpy as np
 import pandas as pd

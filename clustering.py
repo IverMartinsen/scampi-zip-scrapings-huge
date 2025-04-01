@@ -1,3 +1,6 @@
+# This script clusters the features extracted from images using KMeans clustering.
+# It matches the features with the corresponding images and saves the cluster labels and filenames in an HDF5 file.
+
 import os
 import h5py
 import numpy as np

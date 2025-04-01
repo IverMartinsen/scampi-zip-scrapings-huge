@@ -2,9 +2,9 @@
 *.zip
 *.hdf5
 /tfds
-/run_2024-02-08
+/data/run_2024-02-08
 /clusters
-/run_2024-02-08 curated
+/data/run_2024-02-08 curated
 /figures
 curated_well_distribution_hist.png
 metadata.csv
