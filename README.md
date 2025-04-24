@@ -1,6 +1,6 @@
 ## zip-scrapings-huge
 
-Repo for preprocessing and curation of large volumes of JPEGs.
+Repo for preprocessing and curation of large volumes of JPEGs. Contains code to curate a folder of JPEGs and create HDF5 datasets compatible with the DINO training in the [SCAMPI DINO](https://github.com/IverMartinsen/scampi-dino) repo.
 
 ### Move a huge folder of JPEGs into multiple subfolders (shards) to ease processing
 ```
